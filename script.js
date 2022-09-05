@@ -8,6 +8,7 @@ function getRandomNumber(min,max){
     return result;
 }
 const arr =[]
+const arr1=[]
 while(arr.length<5){
     let SimonNumb =getRandomNumber(1,50);
     arr.push(SimonNumb);
@@ -24,3 +25,17 @@ for (let i=0;i<arr.length;i++){
 
 }
 console.log(arr)
+
+
+setTimeout(myfun,5*1000)
+function myfun(){
+    document.getElementById('PC-numbers-container').style.display='none';
+    alert('now i\'ts you turn');
+    alert('insert same numbers')
+    while(arr1.length<5){
+    
+    }
+}
+
+
+
