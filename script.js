@@ -35,6 +35,7 @@ function myfun(){
 }
 
 let counter =0;
+const arr2=[];
 setTimeout(myfun1,5*1000)
 function myfun1(){
     while(arr1.length<5){
@@ -47,6 +48,8 @@ function myfun1(){
             if(a===arr[i]){
                 counter++;
                 console.log(counter)
+                console.log(a)
+                arr2.push(a)
             }
             i++;
          } while (i<arr.length);
@@ -54,7 +57,8 @@ function myfun1(){
     }
     
   
-      console.log(counter)  
+      console.log('quanti numeri indov',counter)  
+      console.log('quali num indov',arr2)
         
     
      
