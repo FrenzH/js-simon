@@ -27,3 +27,16 @@
   .PC-numbers{
     padding: 20px;
   }
+
+
+  #btn-container{
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }

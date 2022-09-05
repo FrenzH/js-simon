@@ -1,5 +1,43 @@
 console.log('js ok!')
 const PCnumbersContainer = document.getElementById('PC-numbers-container')
+const btn=document.getElementById('btn')
+
+
+
+btn.addEventListener('click', myfun2)
+
+
+
+
+function myfun2(){
+    PCnumbersContainer.innerHTML='';
+    while(arr.length<5){
+        let SimonNumb =getRandomNumber(1,50);
+        arr.push(SimonNumb);
+    }
+    
+    
+    for (let i=0;i<arr.length;i++){
+        const PCnumbers =document.createElement('div');
+        PCnumbers.innerHTML = arr[i]
+        PCnumbersContainer.append( PCnumbers)
+        PCnumbers.classList.add('PC-numbers')
+        
+    
+    
+    }
+    console.log(arr)
+    setTimeout(myfun,30*1000)
+    setTimeout(myfun1,35*1000)
+
+}
+
+
+
+
+
+
+
 
 function getRandomNumber(min,max){
     const range = max - min; 
@@ -9,25 +47,10 @@ function getRandomNumber(min,max){
 }
 const arr =[]
 const arr1=[]
-while(arr.length<5){
-    let SimonNumb =getRandomNumber(1,50);
-    arr.push(SimonNumb);
-}
 
 
-for (let i=0;i<arr.length;i++){
-    const PCnumbers =document.createElement('div');
-    PCnumbers.innerHTML = arr[i]
-    PCnumbersContainer.append( PCnumbers)
-    PCnumbers.classList.add('PC-numbers')
-    
 
 
-}
-console.log(arr)
-
-
-setTimeout(myfun,3*1000)
 function myfun(){
     document.getElementById('PC-numbers-container').style.display='none';
 
@@ -36,7 +59,7 @@ function myfun(){
 
 let counter =0;
 const arr2=[];
-setTimeout(myfun1,5*1000)
+
 function myfun1(){
     while(arr1.length<5){
         let a = parseInt(prompt('enter a number'))
