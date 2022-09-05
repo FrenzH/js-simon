@@ -1,6 +1,7 @@
 console.log('js ok!')
 const PCnumbersContainer = document.getElementById('PC-numbers-container')
 const btn=document.getElementById('btn')
+document.getElementById('result-container').style.display='none';
 
 
 
@@ -27,8 +28,9 @@ function myfun2(){
     
     }
     console.log(arr)
-    setTimeout(myfun,30*1000)
-    setTimeout(myfun1,35*1000)
+    setTimeout(myfun,10*1000)
+    setTimeout(myfun1,15*1000)
+    setTimeout(myfun3,16*1000)
 
 }
 
@@ -64,20 +66,19 @@ function myfun1(){
     while(arr1.length<5){
         let a = parseInt(prompt('enter a number'))
         arr1.push(a)
-        let i= 0;
         
-        do {
+        
+        
             
-            if(a===arr[i]){
+        if(arr.includes(a)){
                 counter++;
-                console.log(counter)
-                console.log(a)
+                
                 arr2.push(a)
             }
-            i++;
-         } while (i<arr.length);
+        
+         } 
       
-    }
+    
     
   
       console.log('quanti numeri indov',counter)  
@@ -87,3 +88,11 @@ function myfun1(){
      
  }
 
+function myfun3(){
+    document.getElementById('result-container').style.display='flex';
+    let z =document.getElementById('counter');
+    let t=document.getElementById('correct-number')
+    z.innerHTML = counter;
+    t.innerHTML = arr2 ;
+    
+}

@@ -40,3 +40,19 @@
     align-items: center;
 
   }
+
+
+  #result-container{
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #counter,#coorect-numer{
+    padding: 10px;
+  }
