@@ -29,8 +29,8 @@ function myfun2(){
     }
     console.log(arr)
     setTimeout(myfun,10*1000)
-    setTimeout(myfun1,15*1000)
-    setTimeout(myfun3,16*1000)
+    setTimeout(myfun1,13*1000)
+    setTimeout(myfun3,14*1000)
 
 }
 
