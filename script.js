@@ -27,15 +27,40 @@ for (let i=0;i<arr.length;i++){
 console.log(arr)
 
 
-setTimeout(myfun,5*1000)
+setTimeout(myfun,3*1000)
 function myfun(){
     document.getElementById('PC-numbers-container').style.display='none';
-    alert('now i\'ts you turn');
-    alert('insert same numbers')
-    while(arr1.length<5){
-    
-    }
+
+   
 }
+setTimeout(myfun1,5*1000)
+function myfun1(){
+    while(arr1.length<5){
+        let a = parseInt(prompt('enter a number'))
+        arr1.push(a)
+      
+    }
+   
+    for(let j=0;j<arr.length;j++){
+        
+        if(arr.includes(arr1[j])){
+            console.log('arr contiene value',arr1[j])
+        }
+    }
+    console.log(arr1)
+    console.log(arr)
+    
+     for(let k=0;k<arr.length;k++){
+            if(arr[k]===arr1[k]){
+                
+            }else{
+            console.log('you lose')
+            break;
+        }
+        
+        
+    
+     
+ }
 
-
-
+}
