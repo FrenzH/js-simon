@@ -65,18 +65,23 @@ function myfun1(){
     while(arr1.length<5){
         let a = parseInt(prompt('enter a number'))
        
-        if(!isNaN(a)){
-            arr1.push(a)
+        if(!isNaN(a) && !arr1.includes(a)){
+            
+            
+                arr1.push(a)
+                if(arr.includes(a)){
+                    counter++;
+                    
+                    arr2.push(a)
+                }
+            
+             }   
+
+            
 
         }
     
-        if(arr.includes(a)){
-                counter++;
-                
-                arr2.push(a)
-            }
         
-         }   
       console.log('quanti numeri indov',counter)  
       console.log('quali num indov',arr2)
         
