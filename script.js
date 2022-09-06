@@ -9,8 +9,16 @@ btn.addEventListener('click', myfun2)
 function myfun2(){
     PCnumbersContainer.innerHTML='';
     while(arr.length<5){
+
+        
         let SimonNumb =getRandomNumber(1,50);
-        arr.push(SimonNumb);
+
+        
+        if(!arr.includes(SimonNumb)){
+            arr.push(SimonNumb);
+
+        }
+        
     }
     
     
