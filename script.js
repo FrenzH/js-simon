@@ -64,7 +64,11 @@ const arr2=[];
 function myfun1(){
     while(arr1.length<5){
         let a = parseInt(prompt('enter a number'))
-        arr1.push(a)
+       
+        if(!isNaN(a)){
+            arr1.push(a)
+
+        }
     
         if(arr.includes(a)){
                 counter++;
