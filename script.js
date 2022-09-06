@@ -35,6 +35,9 @@ function myfun2(){
     setTimeout(myfun,5*1000)
     setTimeout(myfun1,6*1000)
     setTimeout(myfun3,7*1000)
+    setTimeout(function() {
+        window.location.reload()
+      }, 20*1000)
 
 }
 
@@ -95,5 +98,13 @@ function myfun3(){
     let t=document.getElementById('correct-number')
     z.innerHTML = counter;
     t.innerHTML = arr2 ;
+    const winOrnot =document.getElementById('WinOrNot');
+    if(counter===5){
+        winOrnot.innerHTML='WIN'
+
+    }
+    else{
+        winOrnot.innerHTML='LOOSE'
     
+    }
 }
