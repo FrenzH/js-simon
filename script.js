@@ -4,11 +4,7 @@ const btn=document.getElementById('btn')
 document.getElementById('result-container').style.display='none';
 
 
-
 btn.addEventListener('click', myfun2)
-
-
-
 
 function myfun2(){
     PCnumbersContainer.innerHTML='';
@@ -33,11 +29,6 @@ function myfun2(){
     setTimeout(myfun3,7*1000)
 
 }
-
-
-
-
-
 
 
 
@@ -66,21 +57,14 @@ function myfun1(){
     while(arr1.length<5){
         let a = parseInt(prompt('enter a number'))
         arr1.push(a)
-        
-        
-        
-            
+    
         if(arr.includes(a)){
                 counter++;
                 
                 arr2.push(a)
             }
         
-         } 
-      
-    
-    
-  
+         }   
       console.log('quanti numeri indov',counter)  
       console.log('quali num indov',arr2)
         
